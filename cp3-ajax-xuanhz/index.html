@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>Song Lyrics</title>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Search Your Lyrics!!!</h1>
+      <div id="input-view">
+        <div class="input-text">
+          <label for="artists">Name of the Artists</label>
+          <input type="text" id="artists">
+        </div>
+        <div class="input-text">
+          <label for="title">Title of the Song</label>
+          <input type="text" id="title">
+        </div>
+        <button id="submit-button">Submit</button>
+      </div>
+
+      <div id="output-view">
+        <h2></h2>
+        <div class="lyrics"></div>
+        <button id="another">Search Another</button>
+      </div>
+      <button id="change-bg">Change BackGround</button>
+      <footer>
+        <hr>
+        <p>
+          Random background image generated from
+          <cite>https://picsum.photos/</cite>
+        </p>
+        <p>
+          Lyrics search engine API is from
+          <cite>https://lyricsovh.docs.apiary.io/#</cite>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+/*
+ * Name: Zephyr Zhou
+ * Date: April 22, 2020
+ * AK Austin Jenchi, Jeffrey Worley
+ *
+ * This is the css fle specify the layout and style what
+ * the game page would look like
+ */
+body {
+  background-image: url("pictures/background.jpg");
+}
+
+section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#rules,
+#game #input,
+#game #view-content .beginning,
+#game #view-content .user-input,
+#game #scroll-view #topic-selector {
+  background-size: contain;
+}
+
+#rules,
+#game #input,
+#game #view-content .beginning,
+#game #scroll-view #view-content .user-input,
+#game #scroll-view #topic-selector {
+  background-repeat: no-repeat;
+}
+
+#rules,
+#game #view-content .beginning,
+#game #scroll-view #view-content .user-input {
+  background-position: center;
+}
+
+#rules,
+#rules #demo,
+#rules #demo div,
+#game,
+#game section,
+#game #view-content #beginning,
+#game #input #limitation *,
+#game #view-content .user-input,
+#game #input #info,
+#game #scroll-view #topic-selector {
+  display: flex;
+}
+
+#rules,
+#rules #demo,
+#game,
+#game #view-content #beginning,
+#game #input {
+  justify-content: center;
+}
+
+#rules {
+  background-image: url("pictures/header.png");
+  height: 60vh;
+}
+
+#rules h1, #rules p {
+  text-align: center;
+}
+
+#rules #demo div {
+  flex-direction: column-reverse;
+  margin-left: 30px;
+}
+
+#rules #demo img {
+  width: 80px;
+  height: 80px;
+  align-self: center;
+}
+
+#game {
+  align-items: top;
+}
+
+#game #scroll-view select {
+  background-color: snow;
+  font-size: 15px;
+}
+
+#game section,
+#game #view-content #beginning,
+#rules,
+#game #view-content .user-input,
+#game #scroll-view #topic-selector {
+  flex-direction: column;
+}
+
+#game section {
+  justify-content: top;
+  margin-left: 40px;
+  margin-right: 20px;
+  width: 50%;
+}
+
+#game #input {
+  height: 70vh;
+  background-image: url("pictures/parchment.png");
+  padding: 5%;
+  margin-left: 0;
+  width: 40vh;
+  align-self: flex-end;
+}
+
+#game #view-content,
+#game #input textarea {
+  width: 100%;
+}
+
+#game #input #limitation * {
+  margin: 0;
+  padding-left: 5;
+}
+
+#game #input textarea {
+  height: 40%;
+}
+
+#game #input #game-interface {
+  height: 80%;
+}
+
+#game #view-content .beginning,
+#game #scroll-view #view-content .user-input {
+  background-size: 100% 100%;
+  border-radius: 25px;
+  padding: 20%;
+}
+
+#game #view-content .beginning {
+  background-image: url('pictures/beginning.png');
+}
+
+#game #view-content .user-input {
+  background-image: url('pictures/user-input.png');
+  margin-bottom: 15px;
+}
+
+#game #view-content .user-input img {
+  width: 5vh;
+  height: 5vh;
+}
+
+#game #input #info,
+#game #input #limitation * {
+  flex-direction: row;
+}
+
+#game #input #info * {
+  padding: 5px;
+}
+
+#game #game-interface textarea {
+  resize: none;
+}
+
+#game #scroll-view #topic-selector {
+  background-image: url("pictures/bubble.png");
+  padding-top: 20%;
+  padding-right: 20%;
+  padding-bottom: 20%;
+  padding-left: 10%;
+  width: 30%;
+}

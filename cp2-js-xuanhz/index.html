@@ -1,0 +1,98 @@
+<!--
+  ***
+  Zephyr Zhou
+  April 22,2020
+  AK Austin Jenchi, Jeffrey Worley
+
+  This is the index.html page for story solitare game.
+  It include possible beginnings for story and game
+  interface displays.
+  ***
+-->
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title> Story Solitare </title>
+  </head>
+  <body>
+    <section id="rules">
+      <h1>Story Solitare</h1>
+      <p>Continue writing the story! We are giving you a start.</p>
+      <div id="demo">
+        <div>
+          <p>Given Beginning </p>
+          <img src="pictures/beginning.png" id="begin-pic" alt="beginner demo">
+        </div>
+        <div>
+          <p>The Story You Wrote</p>
+          <img src="pictures/user-input.png" id="input-pic" alt="input demo">
+        </div>
+        <div>
+          <p>Click This to Delete</p>
+          <img src="pictures/minus.png" id="minus-pic" alt="delete demo">
+        </div>
+      </div>
+
+    </section>
+
+    <section id="game">
+      <section id="scroll-view">
+        <div id="topic-selector">
+          <label for="topics"> Change Topic: </label>
+          <select id="topics">
+            <option id="romantic" value="romantic">Romantic</option>
+            <option id="scientific" value="scientific">Scientific</option>
+          </select>
+        </div>
+        <div id="view-content">
+          <div id="beginning">
+            <p id="romantic0" class="beginning">
+              The last 73 bus returned to the bus terminal that night,
+              the street lights went off in sequence,
+              Li Lei put out the cigarette butt in his hand, and turned
+              to immerse in darkness.
+            </p>
+            <p id="romantic1" class="beginning">
+              "Have you ever heard of a door bell?" asked Hal, hanging
+              out of his bedroom window to look down at the young werewolf
+              below through sleep draggled eyes.
+            </p>
+            <p id="romantic2" class="beginning">
+              He clearly felt that the person in front of him was well-prepared.
+            </p>
+            <p id="scientific0" class="beginning">
+              The electrical current on the nerve surface suddenly stopped,
+              and all the cells, tissues, and organs in his body were petrified.
+            </p>
+            <p id="scientific1" class="beginning">
+              From the perspective of the moon, it can be observed that a small
+              sun-like wide aspiration suddenly appeared in the southern hemisphere
+              of the earth, about the location of the middle desert in Australia
+            </p>
+            <p id="scientific2" class="beginning">
+              The tragedy of 2020's coronovirus all begins with a single bat.
+            </p>
+          </div>
+        </div>
+        <div class="scroll-bar"></div>
+      </section>
+
+      <section id="input">
+        <button type="button" id="start-button">Start!</button>
+        <div id="game-interface">
+          <button type="reset" id="clear-button">Clear</button>
+          <textarea placeholder="Continue the story!" maxlength="400"></textarea>
+          <button type="submit" id="submit-button">Submit</button>
+          <div id="info">
+            <p>Words Count:</p>
+            <p id="words-count">0</p>
+            <p>words</p>
+          </div>
+          <p>Max Characters: 400</p>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

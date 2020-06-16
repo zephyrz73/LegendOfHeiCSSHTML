@@ -1,0 +1,55 @@
+<!--
+  ***
+  Zephyr Zhou
+  June 09,2020
+  AK Austin Jenchi, Jeffrey Worley
+
+  This is the zoomingo.html page for zoomingo game.
+  It include boards for bingo and game
+  interface displays.
+  ***
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zoomingo!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="zoomingo.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        Welcome to CSE 154's Zoomingo!
+      </h1>
+    </header>
+
+    <section id="input-view">
+      <div id="name-input">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div id="size-input">
+        <label for="size-select">Choose a board size:</label>
+        <select id="size-select">
+          <option value="">--Please choose a board size--</option>
+          <option value="9"> 3x3 </option>
+          <option value="25"> 5x5 </option>
+        </select>
+      </div>
+    </section>
+
+    <section id="small-btn-field">
+      <button id="new-game">New Game</button>
+      <button id="reset">Reset</button>
+      <button id="resume">Resume Game?</button>
+    </section>
+
+    <section id="play-view">
+      <p id="error"></p>
+      <p id="win"></p>
+      <div id="board"></div>
+      <button id="bingo">Bingo!!!!</button>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "hw4-bestreads-xuanhz",
+  "version": "1.0.0",
+  "description": "*Special thanks to Allison Obourn for the original version of this assignment. Additional thanks to Tal Wolman and Jack Venberg for the adaptation of this assignment into Node.js*",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "init": "^0.1.2",
+    "multer": "^1.4.2",
+    "sqlite": "^4.0.9",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.cs.washington.edu:cse154-20sp-students/hw4-bestreads-xuanhz.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

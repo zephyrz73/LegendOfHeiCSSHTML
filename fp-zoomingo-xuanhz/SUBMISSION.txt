@@ -1,0 +1,32 @@
+1. For each of the required features, where should we look for its implementation? Reference the numbers from the section below along with the file name and line numbers . For example:
+#1: public/zoomingo.html lines 27-42
+    public/zoomingo.js lines 168,169,249,250,111,112
+#2: public/zoomingo.html lines 34-40 53
+    public/styles.css lines 20-30
+    public/zoomingo.js function at 80, 89 lines at 29
+#3: public/zoomingo.html lines at 45
+    public/zoomingo.js lines at 25, function at 152, 187, 218, 237, 276, 260
+    app.js endpoint at 34 function at 273, 298, 315, 183, 290, 249, 214, 328
+    create.sql all
+#4:   app.js lines at 262
+      public/zoomingo.js lines at 210,211
+#5:   public/zoomingo.js function at 246 lines at 26,27
+      public/zoomingo.html lines at 46
+#6:   public/styles.css lines at 58-61
+      public/zoomingo.js lines at 200,209, 237function at 218, 276, 260
+      app.js endpoint at 65 function at 328, 315, 229
+#7:   public/zoomingo.html lines at 54
+      public/zoomingo.js lines at 28 function at 109, 126, 276, 260
+      app.js endpoint at 99 function at 328, 315
+#8:   create.sql lines at 3, 4, 12, 17
+      public/zoomingo.js lines at 110, 188-191, 219, 247, 248
+      app.js function at 273, 183 lines at 42, 43-49
+#9:   create.sql lines at 16-20, 11-14
+#10:  create.sql lines at 1-9
+#11:  public/zoomingo.js lines at 188-191, 22, 23 function at 36, 56, 276, 260, 89,187
+      public/zoomingo.html lines at 47
+      public/app.js endpoint at 134 function at 328, 315, 170, 195
+2. (1 sentence description) What is the name of the file or link to the video of you demonstrating the project running?
+https://1drv.ms/u/s!AkNl27RbftEPgTft9PJZupIDMzIb?e=Trq08b link to a zip file you should open
+3. (No more than 1 paragraph / 4 sentences) What would you have done, fixed, or added if you had more time?
+I would try to write my own test and see if anything else than the test works

@@ -1,0 +1,61 @@
+/*
+ * Name: Zephyr Zhou
+ * Date: June 09, 2020
+ * AK Austin Jenchi, Jeffrey Worley
+ *
+ * This is the css fle specify the layout and style what
+ * the game page would look like
+ */
+body * {
+  margin: 1vh;
+  text-align: center;
+}
+
+#play-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#play-view #board {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 120vh;
+  border-style: dashed;
+  border-width: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+#play-view #board .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  text-align: center;
+  /* margin-top: 0px;
+  margin-bottom: 0px; */
+}
+
+#bingo {
+  height: 50px;
+  width: 150px;
+  color: white;
+  background-color: rgb(0, 102, 255);
+  border-color: transparent;
+  font-size: xx-large;
+}
+
+#play-view #error {
+  color: red;
+}
+
+.selected {
+  background-color: skyblue;
+  background-size: cover;
+}

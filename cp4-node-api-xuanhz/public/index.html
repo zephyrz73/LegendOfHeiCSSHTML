@@ -1,0 +1,86 @@
+<!--
+  Name: Zephyr Zhou
+  Date: 05/22/2020
+  Section: CSE 154 AK
+
+  This is html file shows data of the app on client computer
+-->
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js"></script>
+  <title> Story Solitare Log In</title>
+</head>
+<body>
+  <section id="error">
+  </section>
+  <section id="log-in">
+    <h1>Log In</h1>
+    <label for="log-in-name">Username: </label>
+    <input type="text" id="log-in-name" required minlength="6" maxlength="13">
+    <label for="log-in-password">Password: </label>
+    <input type="text" id="log-in-password" required minlength="6" maxlength="13">
+    <button id="go-sign-up">First Time Play? Sign Up</button>
+    <button id="log-in-btn">Log In!</button>
+    <div id="log-in-output" class="output"></div>
+  </section>
+  <section id="sign-up">
+    <h1>Sign Up</h1>
+    <button id="rand-name-btn">Generate Random</button>
+    <div class="username">
+      <label for="sign-up-name">Username: </label>
+      <input type="text" id="sign-up-name" required minlength="6" maxlength="13">
+    </div>
+    <div class="password">
+      <label for="sign-up-password">Password: </label>
+      <input type="text" id="sign-up-password" required minlength="6" maxlength="13">
+    </div>
+    <div class="pen-name">
+      <label for="pen-name">Pen Name: </label>
+      <input type="text" class="pen-name" id="pen-name" required minlength="6" maxlength="13">
+    </div>
+    <div class="birthday">
+      <label for="birthday">Birthday: </label>
+      <input type="date" id="birthday">
+    </div>
+    <div class="gender">
+      <p>Gender: </p>
+      <input type="radio" name="female" id="female">
+      <label for="female">
+        <img src="localpics/girl.jpeg" alt="girl">
+      </label>
+      <input type="radio" name="male" id="male">
+      <label for="male">
+        <img src="localpics/boy.jpeg" alt="boy">
+      </label>
+    </div>
+    <button id="go-log-in">Already Signed Up?</button>
+    <button id="sign-up-btn">Sign Up!</button>
+    <div id="sign-up-output" class="output"></div>
+  </section>
+
+  <section id="logged-in">
+    <h1>Dear <span class="pen-name"></span> :</h1>
+    <div id="change-bg">
+      <select id="change-bg-drop">
+        <option value="original">Original</option>
+        <option value="crystalize">Crystalize</option>
+        <option value="blackwhite">Black and White</option>
+      </select>
+    </div>
+    <h2>Welcome to Story Solitare!</h2>
+    <h2>Sentence For The Day: </h2>
+    <p id="sentence"></p>
+    <div id="profile"></div>
+  </section>
+  <footer>
+    <p>Background Image From:
+      <cite>
+        https://www.pixiv.net/users/10885193/artworks/%E5%9C%BA%E6%99%AF
+      </cite>
+      By @Lifeline
+    </p>
+  </footer>
+</body>
+</html>

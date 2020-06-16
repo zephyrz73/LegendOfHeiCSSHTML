@@ -1,0 +1,155 @@
+/*
+  Name: Zephyr Zhou
+  Date: April 13th, 2020
+  Section:   AK Austin Jenchi, Jeffrey Worley
+  This is the style.css page for my portfolio of web development work.
+  It is used by all pages in my portfolio to give the site a consistent look and feel.
+*/
+
+body {
+  background-image: url("img/background.png");
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+h1 {
+  font-family: 'Coda Caption', sans-serif;
+}
+
+header {
+  height: 100vh;
+  justify-content: center;
+}
+
+header, #jokes article {
+  flex-direction: column;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 120px;
+  margin-bottom: 0px;
+  text-shadow: 20px 14px 20px #551755;
+}
+
+header blockquote {
+  margin-top: 0px;
+  font-size: 22px;
+}
+
+footer {
+  width: 100%;
+}
+
+footer p, main, #intro h2, #facts h2, #jokes h2, #jokes > p {
+  text-align: center;
+}
+
+footer p, #jokes article {
+  padding: 20px;
+}
+
+#intro, #facts, #jokes {
+  width: 80%;
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+#intro h2, #facts h2, #jokes h2 {
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+#intro, #facts {
+  padding: 30px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-width: 15px;
+  border-bottom-width: 15px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-color: #551755;
+}
+
+#intro, #facts, footer {
+  background-color: #E0DBD7;
+}
+
+#intro section, #jokes article, header, #jokes #cards {
+  display: flex;
+}
+
+#intro p, #facts ol {
+  font-size: 20px;
+}
+
+#intro img {
+  width: 25vw;
+  height: 100%;
+  border-radius: 10%;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#facts p, article p, article .answer {
+  font-size: 24px;
+}
+
+#facts a:visited {
+  color: #1B506E;
+}
+
+#facts a {
+  color: #FFA500;
+}
+
+#jokes h2, #jokes > p, header, #jokes article .qa {
+  color: #E0DBD7;
+}
+
+#jokes #cards {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#jokes #cards, header, #jokes article {
+  align-items: center;
+}
+
+#jokes #cards article {
+  margin: 15px;
+  height: 400px;
+  width: 300px;
+  background-color: #9B580D;
+  opacity: 80%;
+}
+
+#jokes #cards article img {
+  height: 150px;
+  width: 150px;
+}
+
+#jokes hr {
+  width: 65%;
+}
+
+#jokes #cards article p {
+  align-self: flex-start;
+}
+
+#jokes article p .qa {
+  font-size: 28px;
+}
+
+#jokes #cards article .answer {
+  color: #191919;
+  display: none;
+}
+
+#jokes #cards article:hover span.answer {
+  display: initial;
+}

@@ -1,0 +1,213 @@
+/*
+
+  Zephyr Zhou
+  April 3,2020
+  AK Austin Jenchi, Jeffrey Worley
+
+  This is the styles.css page for my portfolio of web development work.
+  It is used by all pages in my portfolio to give the site a consistent
+  look and feel.
+*/
+
+/*
+  Note: This body ruleset is to get you started
+*/
+body {
+  background-image: url("picture/background.jpg");
+  padding: 0;
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
+}
+
+body, a {
+  color: #a1bcb7;
+}
+
+body, #navigation, .content, #classes li, #favorites {
+  width: 100%;
+}
+
+section, h1, .content, a, .left, .right, #classes li, #favorites, #favorites li, #emoji {
+  text-align: center;
+}
+
+#classes li, #navigation a:hover {
+  color: black;
+}
+
+section, #quotes img, #quotes p {
+  margin: 0px;
+}
+
+.left, .right {
+  width: 400px;
+  line-height: 150%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.left img, .right img {
+  width: 75%;
+  height: 75%;
+}
+
+.left, .right, #favorites li, #emoji #happy, #emoji #sad {
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  padding: 30px;
+}
+
+#navigation a:hover {
+  background-color: #ddd;
+}
+
+#navigation {
+  background-color: rgba(13, 14, 14, 0.8);
+  height: 60px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+}
+
+#profile {
+  height: 60vh;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  z-index: 0;
+}
+
+section {
+  min-height: 615px;
+  height: 100vh;
+}
+
+h1 {
+  display: block;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  background-color: rgba(89, 89, 89, 0.5);
+  height: 10vh;
+}
+
+.content {
+  height: 95vh;
+  align-items: center;
+}
+
+#classes li {
+  height: 100px;
+  margin-top: 10px;
+  font-size: 50px;
+}
+
+mark {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#classes li:nth-child(1) {
+  background-image: url("picture/340.jpg");
+}
+
+#classes li:nth-child(2) {
+  background-image: url("picture/154.jpg");
+}
+
+#classes li:nth-child(3) {
+  background-image: url("picture/soc225.jpg");
+}
+
+#classes li:nth-child(4) {
+  background-image: url("picture/457.png");
+}
+
+#favorites li {
+  height: 70vh;
+  width: 15%;
+  margin-left: 30px;
+  list-style-type: none;
+}
+
+#favorites li:nth-child(1) {
+  background-image: url("picture/CutCat.jpg");
+  background-position: 65% 75%;
+  background-size: 510%;
+}
+
+#favorites li:nth-child(2) {
+  background-image: url("picture/rice_noodle.jpg");
+  background-position: 95% 75%;
+  background-size: 360%;
+}
+
+#favorites li:nth-child(3) {
+  background-image: url("picture/ukulele.jpg");
+  background-position: 45% 25%;
+  background-size: 520%;
+}
+
+#favorites li:nth-child(4) {
+  background-image: url("picture/Soul_Of_Hunter.jpg");
+  background-position: 25% 45%;
+  background-size: 530%;
+}
+
+#favorites li:nth-child(5) {
+  background-image: url("picture/Legend_Of_Hei2.jpg");
+  background-position: 35% 75%;
+  background-size: 150%;
+}
+
+#emoji #happy, #sad {
+  width: 50%;
+  height: 50%;
+}
+
+#quote {
+  font-size: 60px;
+}
+
+.chinese {
+  font-family: 'Zhi Mang Xing', cursive;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+#quotes img {
+  height: 70%;
+  width: 70%;
+}
+
+#quotes p {
+  line-height: 40px;
+}
+
+.copyright {
+  line-height: 20px;
+  font-size: 15px;
+  background-color: black;
+  margin-bottom: 100px;
+}
+
+.citation {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+#favorites .citation {
+  margin-top: 700px;
+}
+
+#emoji .citation {
+  margin-top: 600px;
+}
